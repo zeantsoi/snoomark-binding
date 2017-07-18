@@ -1,6 +1,6 @@
 # SnooMark
 
-Reddit flavored CommonMark-to-HTML conversion in Python, built upon [pulldown-cmark](https://github.com/google/pulldown-cmark).
+Reddit flavored CommonMark-to-HTML conversion in Python, implemented in both [pulldown-cmark](https://github.com/google/pulldown-cmark) and [comrak](https://github.com/kivikakk/comrak).
 
 ## Setup
 
@@ -12,5 +12,6 @@ Reddit flavored CommonMark-to-HTML conversion in Python, built upon [pulldown-cm
 
     import snoomark
 
-    snoomark.to_html("This is a string with **bold** and *italic*.")
+    snoomark.pulldown_cmark.to_html("This is a string with **bold** and *italic*.")
 
+    snoomark.pulldown_cmark.to_html("This renders as a hyperlink: https://reddit.com.")
