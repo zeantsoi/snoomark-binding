@@ -1,3 +1,7 @@
 [submodule "pulldown-cmark"]
 	path = pulldown-cmark
 	url = git@github.com:zeantsoi/pulldown-cmark
+
+[submodule "comrak"]
+    path = comrak
+    url = git@github.com:zeantsoi/comrak
